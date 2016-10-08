@@ -8,6 +8,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <section class="page-header">
@@ -20,210 +23,195 @@
 
     <section class="main-content">
       <div align="center">
-<h1>
-<a id="hello-world" class="anchor" href="#hello-world" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hello World!</h1>
-<div>
-    <div>
-        <div> </div>
-        <div> Hide</div>
-        <div> Display</div>
-        <div> Toggle</div>
-        <div> </div>
-    </div>
+      <h1>Hello World!</h1>
+<div class="container-fluid">
+	<div class="row" >
+		<div class="col-sm-3" style="background-color:transparent;"> </div>
+		<div class="col-sm-2" style="background-color:lavender;"> Hide</div>
+		<div class="col-lg-2" style="background-color:lime;"> Display</div>
+		<div class="col-md-2" style="background-color:aqua;"> Toggle</div>
+		<div class="col-sm-3" style="background-color:transparent;"> </div>
+	</div>
 
+</div>
+<hr>
+
+
+<div class="container" style="min-height:70px">
+	<p id="p1" style="font-size: 3em">Display / Hide Text With JQuery</p>
 </div>
 
 <hr>
 
-<div>
-    <p id="p1">Display / Hide Text With JQuery</p>
-</div>
 
+	<div id="div99" align="center"></div>
 <hr>
 
-<pre><code>&lt;div id="div99" align="center"&gt;&lt;/div&gt;
-</code></pre>
-
+<button id="hide" class="btn btn-default btn-lg">Hide</button>
+<button id="show" class="btn btn-default btn-lg">show</button>
+<!-- <button id="toggle">Toggle</button> --> <br>
+<button id="fadein" class="btn btn-primary btn-md"> Fade in</button>
+<button id="fadeinslow" class="btn btn-primary btn-md">Fade in slow</button>
+<button id="fadeintimer" class="btn btn-success btn-md">Fade in Timer</button> <br>
+<button id="fadeout" class="btn btn-info btn-md">Fade out</button>
+<button id="fadeoutslow" class="btn btn-danger btn-md">Fade out slow</button>
+<button id="fadeouttimer" class="btn btn-success btn-md">Fade out Timer</button> <br>
+<button id="fadetoggle" class="btn btn-info btn-md">Fade Toggle</button>
+<button id="fadetoggleslow" class="btn btn-success btn-md">Fade Toggle Slow</button>
+<button id="fadetoggletimer" class="btn btn-info btn-md">Fade Toggle Timer</button> <br>
+<button id="writes" onclick="writes()" class="btn btn-warning btn-lg">writes</button>
+<button id="writes" onclick="alert('block button')" class="btn btn-warning btn-block">writes</button>
+</div>
 <hr>
 
-<p>Hide
-show
-&lt;!-- Toggle --&gt; <br>
- Fade in
-Fade in slow
-Fade in Timer <br>
-Fade out
-Fade out slow
-Fade out Timer <br>
-Fade Toggle
-Fade Toggle Slow
-Fade Toggle Timer <br>
-writes
-writes
-</p>
+<div class="container">
+  <h2>Button States</h2>
+  <button type="button" class="btn btn-primary">Primary Button</button>
+  <button type="button" class="btn btn-primary active">Active Primary</button>
+  <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
 </div>
-
+<div class="btn-group btn-group-lg">
+  <h2>Button Group</h2>
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <button type="button" class="btn btn-primary">Sony</button>
+</div>
 <hr>
-
-<div>
-  <h2>
-<a id="button-states" class="anchor" href="#button-states" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Button States</h2>
-  Primary Button
-  Active Primary
-  Disabled Primary
+<div class="btn-group-vertical btn-group-lg">
+  <h2>Button Group Vertical</h2>
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <button type="button" class="btn btn-primary">Sony</button>
 </div>
-
-<div>
-  <h2>
-<a id="button-group" class="anchor" href="#button-group" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Button Group</h2>
-  Apple
-  Samsung
-  Sony
-</div>
-
 <hr>
-
-<div>
-  <h2>
-<a id="button-group-vertical" class="anchor" href="#button-group-vertical" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Button Group Vertical</h2>
-  Apple
-  Samsung
-  Sony
-</div>
-
-<hr>
-
-<div>
+<div><h2>Button Group Justified </h2></div>
+<div class="btn-group btn-group-justified">
   
-  <a href="#">Apple</a>
-  <a href="#">Samsung</a>
-  <a href="#">Sony</a>
+  <a href="#" class="btn btn-primary">Apple</a>
+  <a href="#" class="btn btn-primary">Samsung</a>
+  <a href="#" class="btn btn-primary">Sony</a>
 </div>
-
 <hr>
-
-<div>
-  <h2>
-<a id="nesting-button-groups--dropdown-menus" class="anchor" href="#nesting-button-groups--dropdown-menus" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nesting Button Groups &amp; Dropdown Menus</h2>
-  Apple
-  Samsung
-  <div>
-    Sony
-    
-    <ul>
-      <li><a href="#">Tablet</a></li>
-      <li><a href="#">Smartphone</a></li>
-    </ul>
+  <p>Nest button groups to create drop down menus:</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Sony <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Tablet</a></li>
+        <li><a href="#">Smartphone</a></li>
+      </ul>
+    </div>
   </div>
 </div>
-
 <hr>
-
-<div>
-  <h2>
-<a id="split-button-dropdowns" class="anchor" href="#split-button-dropdowns" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Split Button Dropdowns</h2>
-  Sony
-  
-    
-  
-  <ul>
+<div class="btn-group">
+  <h2>Split Button Dropdowns</h2>
+  <button type="button" class="btn btn-primary">Sony</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
     <li><a href="#">Tablet</a></li>
     <li><a href="#">Smartphone</a></li>
   </ul>
 </div>
 
-<hr>
 
-<div>
-    <h1>
-<a id="typography" class="anchor" href="#typography" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Typography</h1>
-    <h2>
-<a id="heading-secondary-text" class="anchor" href="#heading-secondary-text" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>heading secondary text</h2>
-    This is highlighted Text with Mark Tag <br>
-    <p>The WHO was founded in 1948.</p>
-    <blockquote>
-        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
-         From WWF's website 
+
+
+
+
+
+
+
+<hr>
+<div class="container">
+	<h1><u>Typography</u></h1>
+	<h2>heading <small>secondary text</small></h2>
+	This is <mark>highlighted</mark> Text with Mark Tag <br>
+	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+	<blockquote>
+	    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+	    <footer>From WWF's website</footer>
     </blockquote>
 <hr>
-    <blockquote>
-        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
-         From WWF's website 
+    <blockquote class="blockquote-reverse">
+	    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+	    <footer>From WWF's website</footer>
     </blockquote>
 <hr>
-    <dl>
-        <dt>Coffee</dt>
-        <dd>- black hot drink</dd>
-        <dt>Milk</dt>
-        <dd>- white cold drink</dd>
-    </dl>
+	<dl>
+	    <dt>Coffee</dt>
+	    <dd>- black hot drink</dd>
+	    <dt>Milk</dt>
+	    <dd>- white cold drink</dd>
+  	</dl>
 <hr>
-    <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+	<p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
 <hr>
-    <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+	<p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
 <hr>
-    <pre>
+	<pre>
 Text in a pre element
-    is displayed in a fixed-width
-    font, and it preserves
-    both      spaces and
+	is displayed in a fixed-width
+	font, and it preserves
+	both      spaces and
 line breaks.
-    </pre>
+	</pre>
 <hr>
 
-    <p>This text is muted.</p>
-    <p>This text is important.</p>
-    <p>This text indicates success.</p>
-    <p>This text represents some information.</p>
-    <p>This text represents a warning.</p>
-    <p>This text represents danger.</p>
+	<p class="text-muted">This text is muted.</p>
+	<p class="text-primary">This text is important.</p>
+	<p class="text-success">This text indicates success.</p>
+	<p class="text-info">This text represents some information.</p>
+	<p class="text-warning">This text represents a warning.</p>
+	<p class="text-danger">This text represents danger.</p>
 <hr>
-    <p>This text is important.</p>
-    <p>This text indicates success.</p>
-    <p>This text represents some information.</p>
-    <p>This text represents a warning.</p>
-    <p>This text represents danger.</p>
+	<p class="bg-primary">This text is important.</p>
+	<p class="bg-success">This text indicates success.</p>
+	<p class="bg-info">This text represents some information.</p>
+	<p class="bg-warning">This text represents a warning.</p>
+	<p class="bg-danger">This text represents danger.</p>
 
+<hr><hr><hr><hr><hr>
+	<p>This paragraph is simple.</p>
+	<p class="lead">This paragraph stands out.</p>
 <hr>
+	<p class="text-left">Left-aligned text.</p>
+	<p class="text-right">Right-aligned text.</p>
+	<p class="text-center">Center-aligned text.</p>
+	<p class="text-justify">Justified text. Justified text. Justified text. Justified text. Justified text. Justified text.</p>
+	<p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+	<p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of justify and nowrap.</p>
 <hr>
+	<p class="text-lowercase">Lowercased text.</p>
+ 	<p class="text-uppercase">Uppercased text.</p>
+  	<p class="text-capitalize">Capitalized text.</p>
 <hr>
+	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (normal abbr)</p>
+	<p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948. (slightly smaller abbr)</p>
 <hr>
+	<ul class="list-unstyled">
+	    <li>Coffee</li>
+	    <li>Tea
+	      <ul>
+	        <li>Black tea</li>
+	        <li>Green tea</li>
+	      </ul>
+	    </li>
+	    <li>Milk</li>
+	</ul>
 <hr>
-    <p>This paragraph is simple.</p>
-    <p>This paragraph stands out.</p>
+	<ul class="list-inline">
+	    <li>Coffee</li>
+	    <li>Tea</li>
+	    <li>Milk</li>
+	</ul>
 <hr>
-    <p>Left-aligned text.</p>
-    <p>Right-aligned text.</p>
-    <p>Center-aligned text.</p>
-    <p>Justified text. Justified text. Justified text. Justified text. Justified text. Justified text.</p>
-    <p>No wrap text. No wrap text. No wrap text. No wrap text.</p>
-    <p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of justify and nowrap.</p>
-<hr>
-    <p>Lowercased text.</p>
-    <p>Uppercased text.</p>
-    <p>Capitalized text.</p>
-<hr>
-    <p>The WHO was founded in 1948. (normal abbr)</p>
-    <p>The WHO was founded in 1948. (slightly smaller abbr)</p>
-<hr>
-    <ul>
-        <li>Coffee</li>
-        <li>Tea
-          <ul>
-            <li>Black tea</li>
-            <li>Green tea</li>
-          </ul>
-        </li>
-        <li>Milk</li>
-    </ul>
-<hr>
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-<hr>
-<dl>
+<dl class="dl-horizontal">
     <dt>Coffee</dt>
     <dd>- black hot drink</dd>
     <dt>Milk</dt>
@@ -254,7 +242,7 @@ line breaks.
   line breaks.</pre>
 
   <p>If you add the .pre-scrollable class, the pre element gets a max-height of 350px and provides a y-axis scrollbar:</p>
-  <pre>Text in a pre element
+  <pre class="pre-scrollable">Text in a pre element
   is displayed in a fixed-width
   font, and it preserves
   both splayed in a fixed-width
@@ -274,7 +262,7 @@ line breaks.
   both      spaces and
   line breaks.</pre>
 <hr>
- <table>
+ <table class="table table-striped table-bordered table-hover">
     <thead>
       <tr>
         <th>Firstname</th>
@@ -301,7 +289,7 @@ line breaks.
     </tbody>
   </table>
 <hr>
-<table>
+<table class="table table-condensed">
     <thead>
       <tr>
         <th>Firstname</th>
@@ -310,27 +298,27 @@ line breaks.
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr class="success">
         <td>John</td>
         <td>Doe</td>
         <td>john@example.com</td>
       </tr>
-      <tr>
+      <tr class="active">
         <td>John</td>
         <td>Doe</td>
         <td>john@example.com</td>
       </tr>
-      <tr>
+      <tr class="warning">
         <td>John</td>
         <td>Doe</td>
         <td>john@example.com</td>
       </tr>
-      <tr>
+      <tr class="danger">
         <td>Mary</td>
         <td>Moe</td>
         <td>mary@example.com</td>
       </tr>
-      <tr>
+      <tr class="info">
         <td>July</td>
         <td>Dooley</td>
         <td>july@example.com</td>
@@ -339,8 +327,8 @@ line breaks.
   </table>
 <hr>
 <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>
-  <div>
-  <table>
+  <div class="table-responsive">
+  <table class="table">
     <thead>
       <tr>
         <th>#</th>
@@ -364,113 +352,94 @@ line breaks.
   </table>
   </div>
 <hr>
-<img src="mypic.JPG" alt="Cinque Terre" width="304" height="236">
+<img src="mypic.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
 
 <hr>
-<img src="mypic.JPG" alt="Cinque Terre" width="304" height="236">
+<img src="mypic.JPG" class="img-circle" alt="Cinque Terre" width="304" height="236">
 
 <hr>
-<img src="mypic.JPG" alt="Cinque Terre" width="304" height="236">
+<img src="mypic.JPG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
 
 <hr>
-<h2>
-<a id="image-gallery" class="anchor" href="#image-gallery" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Image Gallery</h2>
+<h2>Image Gallery</h2>
   <p>The .thumbnail class can be used to display an image gallery. Click on the images to see it in full size:</p>
-  
-  <div>
-    <div>
-      <a href="mypic.JPG">
+  <marquee>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="mypic.JPG" class="thumbnail">
         <p>Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.</p>
-        <img src="mypic.JPG" alt="Pulpit Rock">
+        <img src="mypic.JPG" alt="Pulpit Rock" style="width:150px;height:150px">
       </a>
     </div>
-    <div>
-      <a href="mypic.JPG">
+    <div class="col-md-4">
+      <a href="mypic.JPG" class="thumbnail">
         <p>Moustiers-Sainte-Marie: Considered as one of the "most beautiful villages of France".</p>
-        <img src="mypic.JPG" alt="Moustiers Sainte Marie">
+        <img src="mypic.JPG" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
       </a>
     </div>
-    <div>
-      <a href="mypic.JPG">
+    <div class="col-md-4">
+      <a href="mypic.JPG" class="thumbnail">
         <p>The Cinque Terre: A rugged portion of coast in the Liguria region of Italy.</p>
-        <img src="mypic.JPG" alt="Cinque Terre">
+        <img src="mypic.JPG" alt="Cinque Terre" style="width:150px;height:150px">
       </a>
     </div>
   </div>
-  
+  </marquee>
 
 <hr>
-<h2>
-<a id="responsive-embed" class="anchor" href="#responsive-embed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Responsive Embed</h2>
-    
-  <div>
-    
+<h2>Responsive Embed</h2>
+	<!-- 16:9 aspect ratio -->
+  <div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
 </div>
 
 <hr>
-
-<div>
-  <div>
-    <h1>
-<a id="bootstrap-tutorial" class="anchor" href="#bootstrap-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bootstrap Tutorial</h1>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Bootstrap Tutorial</h1>
     <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
   </div>
   <p>This is some text.</p>
 </div>
-
-<p>Place the jumbotron outside the <strong>&lt;div class="container"&gt; </strong> if you want the jumbotron to extend to the screen edges.</p>
-
+<p>Place the jumbotron outside the <mark><strong>&lt;div class="container"&gt; </strong></mark> if you want the jumbotron to extend to the screen edges.</p>
 <hr>
 
 <hr>
-
-<div>
-    <h1>
-<a id="example-page-header" class="anchor" href="#example-page-header" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example Page Header</h1>
+<div class="page-header">
+    <h1>Example Page Header</h1>
   </div>
   <p>This is some text.</p>
 <hr>
-<div>Basic Well</div>
+<div class="well well-lg">Basic Well</div>
 <hr>
-<div>
-    <a href="#" title="close">×</a>
+<div class="alert alert-success fade in" style="margin-top:18px;">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
     <strong>Success!</strong> This alert box indicates a successful or positive action.
 </div>
-
 <hr>
-
-<div>
-    <a href="#" title="close">×</a>
+<div class="alert alert-info fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
     <strong>Info!</strong> This alert box indicates a neutral informative change or action.
 </div>
-
 <hr>
-
-<div>
-    <a href="#" title="close">×</a>
+<div class="alert alert-warning fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
     <strong>Warning!</strong> This alert box indicates a warning that might need attention.
 </div>
-
 <hr>
-
-<div>
-    <a href="#" title="close">×</a>
+<div class="alert alert-danger fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
     <strong>Danger!</strong> This alert box indicates a dangerous or potentially negative action.
 </div>
-
 <hr>
-
-<h2>
-<a id="button-styles" class="anchor" href="#button-styles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Button Styles</h2>
-
-<p>Default
-  Primary
-  Success
-  Info
-  Warning
-  Danger
-  Link</p>
-
+<h2>Button Styles</h2>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>
 <hr>
 
 <hr>
@@ -489,11 +458,17 @@ line breaks.
 
 <hr>
 
-<p></p>
+
+
+
+
+
+
+
+
+
 </div>
 
-<pre><code>        &lt;!-- Script Section --&gt;
-</code></pre>
 
 
 
@@ -503,14 +478,101 @@ line breaks.
 
 
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/rohitsachan/My-JQuery">My-jquery</a> is maintained by <a href="https://github.com/rohitsachan">rohitsachan</a>.</span>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+			<!-- Script Section -->
+			
+<script src="jquery-3.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+        <!-- Online CDN -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ -->
 
-    </section>
+<script>
+	function writes() {
+		document.write("color:mediumblue">"Hello World!");
+		document.writeln("color:mediumblue">"Have a nice day!");
+		document.writeln("Helllllo");
+	}
+	
+</script>
 
-  
-  </body>
+<script type="text/javascript">
+	// $(document).ready(function () {
+	// 	alert('Hello')
+	// });
+// OR
+	// $(function () {
+	// 	alert('Hello')
+	// });
+
+	$(function () {
+		$("#show").click(function () {
+			$("p").show();
+		});
+
+		$("#hide").click(function () {
+			$("p").hide();
+		});
+
+		// $("#toggle").click(function () {
+		// 	$("p").Toggle();
+		// });
+
+		$("#fadein").click(function () {
+			$("#p1").fadeIn();
+		});
+
+		$("#fadeinslow").click(function () {
+			$("#p1").fadeIn("slow");
+		});
+
+		$("#fadeintimer").click(function () {
+			$("#p1").fadeIn(3000);
+		});
+
+		$("#fadeout").click(function () {
+			$("#p1").fadeOut();
+		});
+
+		$("#fadeoutslow").click(function () {
+			$("#p1").fadeOut("slow");
+		});
+
+		$("#fadeouttimer").click(function () {
+			$("#p1").fadeOut(3000);
+		});
+
+		$("#fadetoggle").click(function () {
+			$("#p1").fadeToggle(function () {
+				confirm("Do u wnat to continue...(funny)");
+			});
+		});
+
+		$("#fadetoggleslow").click(function () {
+			$("#p1").fadeToggle("slow", function () {
+				prompt("fadetoggleslow invoked", "Enter something");
+				document.getElementById("div99").innerHTML = "This is a prompt message!";
+			});
+		});
+
+		$("#fadetoggletimer").click(function () {
+			$("#p1").fadeToggle(3000, function () {
+				alert("Hello fadetoggletimer invoked")
+			});
+		});
+
+
+
+
+	});
+
+
+
+
+
+
+
+</script>
+</body>
 </html>
