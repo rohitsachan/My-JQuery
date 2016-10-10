@@ -471,159 +471,481 @@ line breaks.
   <button type="button" class="btn btn-danger">Danger <span class="badge">5</span></button>
 
 <hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-<hr>
-
-
-
-
-
-
-
-
-
-
+<h2>Labels </h2>
+<h1>Example <span class="label label-default">New</span></h1>
+  <h2>Example <span class="label label-default">New</span></h2>
+  <h3>Example <span class="label label-default">New</span></h3>
+  <h4>Example <span class="label label-default">New</span></h4>
+  <h5>Example <span class="label label-default">New</span></h5>
+  <h6>Example <span class="label label-default">New</span></h6>
+
+<hr>
+<span class="label label-default">Default Label</span>
+<span class="label label-primary">Primary Label</span>
+<span class="label label-success">Success Label</span>
+<span class="label label-info">Info Label</span>
+<span class="label label-warning">Warning Label</span>
+<span class="label label-danger">Danger Label</span>
+<hr>
+<h2>Basic Progress Bar</h2>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      <span class="sr-only">70% Complete</span>
+    </div>
+  </div>
+<hr>
+<h2>Progress Bar With Label</h2>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70%
+    </div>
+  </div>
+<hr>
+  <h2>Colored Progress Bars</h2>
+  <p>The contextual classes colors the progress bars:</p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40% Complete (success)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      50% Complete (info)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+      60% Complete (warning)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70% Complete (danger)
+    </div>
+  </div>
+<hr>
+<h2>Striped Progress Bars</h2>
+  <p>The .progress-bar-striped class adds stripes to the progress bars:</p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40% Complete (success)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      50% Complete (info)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+      60% Complete (warning)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70% Complete (danger)
+    </div>
+  </div>
+<hr>
+<h2>Animated Progress Bar</h2>
+  <p>The .active class animates the progress bar:</p>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    40%
+  </div>
 </div>
+<hr>
+<h2>Stacked Progress Bars</h2>
+  <p>Create a stacked progress bar by placing multiple bars into the same div with class .progress:</p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+      Free Space
+    </div>
+    <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+      Warning
+    </div>
+    <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+      Danger
+    </div>
+  </div>
+<hr>
+<h2>Pagination - Active And Disabled State</h2>
+  <p>Add class .active to let the user know which page he/she is on:</p>
+  <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li class="active"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li class="disabled"><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+<hr>
+<h2>Pagination Sizing</h2>
+<ul class="pagination pagination-lg">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+<ul class="pagination pagination-sm">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+<hr>
+<h2>Breadcrumbs</h2>
+<ul class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Private</a></li>
+  <li><a href="#">Pictures</a></li>
+  <li class="active">Vacation</li> 
+</ul>
+<hr>
+<h2>Pager</h2>
+  <p>The .pager class provides previous and next buttons (links):</p>
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+<hr>
+<ul class="pager">
+  <li class="previous"><a href="#">Previous</a></li>
+  <li class="next"><a href="#">Next</a></li>
+</ul>
+<hr>
+<h2>List Group With Badges</h2>
+  <ul class="list-group">
+    <li class="list-group-item">New <span class="badge">12</span></li>
+    <li class="list-group-item">Deleted <span class="badge">5</span></li>
+    <li class="list-group-item">Warnings <span class="badge">3</span></li>
+  </ul>
+<hr>
+<h2>List Group With Linked Items</h2>
+  <div class="list-group">
+    <a href="#" class="list-group-item">First item</a>
+    <a href="#" class="list-group-item">Second item</a>
+    <a href="#" class="list-group-item">Third item</a>
+  </div>
+<hr>
+<h2>Active / Disable Item in a List Group</h2>
+  <div class="list-group">
+    <a href="#" class="list-group-item active">First item</a>
+    <a href="#" class="list-group-item disabled">Second item</a>
+    <a href="#" class="list-group-item">Third item</a>
+  </div>
+<hr>
+<h2>List Group With Contextual Classes</h2>
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-success">First item</li>
+    <li class="list-group-item list-group-item-info">Second item</li>
+    <li class="list-group-item list-group-item-warning">Third item</li>
+    <li class="list-group-item list-group-item-danger">Fourth item</li>
+  </ul>
+  
+  <h2>Linked Items With Contextual Classes</h2>
+  <p>Move the mouse over the linked items to see the hover effect:</p>
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-success">First item</a>
+    <a href="#" class="list-group-item list-group-item-info">Second item</a>
+    <a href="#" class="list-group-item list-group-item-warning">Third item</a>
+    <a href="#" class="list-group-item list-group-item-danger">Fourth item</a>
+  </div>
+<hr>
+<h2>List Group With Custom Content</h2>
+  <div class="list-group">
+    <a href="#" class="list-group-item active">
+      <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">Second List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">Third List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+  </div>
+<hr>
+<h2>Basic Panel</h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">Panel Heading</div>
+    <div class="panel-body">A Basic Panel</div>
+    <div class="panel-body">Panel Content</div>
+    <div class="panel-footer">Panel Footer</div>
+  </div>
+<hr>
+<h2>Panel Group</h2>
+  <p>The panel-group class clears the bottom-margin. Try to remove the class and see what happens.</p>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Panel Header</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Panel Header</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Panel Header</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+  </div>
+<hr>
+<h2>Panels with Contextual Classes</h2>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Panel with panel-default class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Panel with panel-primary class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-success">
+      <div class="panel-heading">Panel with panel-success class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-info">
+      <div class="panel-heading">Panel with panel-info class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-warning">
+      <div class="panel-heading">Panel with panel-warning class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">Panel with panel-danger class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+  </div>
+<hr>
+<h2>Dropdowns</h2>
+  <p>The .dropdown class is used to indicate a dropdown menu.</p>
+  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+<hr>
+<h2>Dropdowns</h2>
+  <p>The .divider class is used to separate links inside the dropdown menu:</p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+<hr>
+<h2>Dropdowns</h2>
+  <p>The .dropdown-header class is used to add headers inside the dropdown menu:</p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-header">Dropdown header 1</li>
+      <li><a href="#">HTML</a></li>
+      <li class="disabled"><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li class="dropdown-header">Dropdown header 2</li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+<hr>
+<h2>Dropdowns</h2>
+  <p>Add the .dropdown-menu-right class to .dropdown-menu to right-align the dropdown menu:</p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+<hr>
+<p>The .dropup class makes the dropdown menu expand upwards instead of downwards:</p>
+  <div class="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropup Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+<hr>
+<p>The .dropdown class is used to indicate a dropdown menu.</p>
+  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+    </ul>
+  </div>
+<hr>
+<h2>Simple Collapsible</h2>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <a href="#demo" class="btn btn-info" data-toggle="collapse">Simple collapsible</a>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+
+<hr>
+            Collapsible Panel.......
+<hr>
+<h3>Tabs With Dropdown Menu</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Submenu 1-1</a></li>
+        <li><a href="#">Submenu 1-2</a></li>
+        <li><a href="#">Submenu 1-3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+<hr>
+<h3>Pills</h3>
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+<hr>
+<h3>Vertical Pills</h3>
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+<hr>
+Vertical Pills in a Row
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
