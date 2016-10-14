@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>JQ &amp; BS</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+	<script src="myjs.js"></script>
+<!-- 			Libraries 			-->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+          <!-- Online CDN -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+
+</head>
+<body>
+<div>
+	<h2>Latest News</h2>
+	<p>Question 1? <span class="spoiler"><b>Answer 1</b></span></p>
+	<p>Question 2? <span class="spoiler"><b>Answer 2</b></span></p>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.spoiler').hide();
+		$('<input type="button" class="revealer" value="Tell Me!"/>').insertBefore('.spoiler');
+		$('.revealer').click(function(){
+		$(this).hide();
+		$(this).next().fadeIn();
+		});
+	});
+</script>
+</body>
+</html>
