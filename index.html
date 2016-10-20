@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>JQ &amp; BS</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -56,8 +56,8 @@
 <button id="fadetoggle" class="btn btn-info btn-md">Fade Toggle</button>
 <button id="fadetoggleslow" class="btn btn-success btn-md">Fade Toggle Slow</button>
 <button id="fadetoggletimer" class="btn btn-info btn-md">Fade Toggle Timer</button> <br>
-<button id="writes" onclick="writes()" class="btn btn-warning btn-lg">writes</button>
-<button id="writes" onclick="alert('block button')" class="btn btn-warning btn-block">writes</button>
+<button id="writes1" onclick="writes()" class="btn btn-warning btn-lg">writes</button>
+<button id="writes2" onclick="alert('block button')" class="btn btn-warning btn-block">writes</button>
 </div>
 <hr>
 
@@ -102,7 +102,6 @@
       </ul>
     </div>
   </div>
-</div>
 <hr>
 <div class="btn-group">
   <h2>Split Button Dropdowns</h2>
@@ -872,7 +871,7 @@ Vertical Pills in a Row
       <h3>HOME</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div id="menu1" class="tab-pane fade">
+    <div id="menu1tab" class="tab-pane fade">
       <h3>Menu 1</h3>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
@@ -992,7 +991,7 @@ Vertical Pills in a Row
  -->
 
 <script>
-	function writes() {
+	function writes1() {
 		document.write("color:mediumblue">"Hello World!");
 		document.writeln("color:mediumblue">"Have a nice day!");
 		document.writeln("Helllllo");
